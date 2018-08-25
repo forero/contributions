@@ -63,18 +63,17 @@ sheets, filaments and voids.
 Many algorithms are focused in finding the two most prominent web features
 found in redshift galaxy surveys: voids and filaments. 
 Voids are regions with sizes on the range of $20-50$ Mpc
-practically devoid of galaxies, see XXX for a recent review of
-void finder algorithms.
+practically devoid of galaxies, see \cite{2016IAUS..308..493V} for a recent review of
+void finding.
 Filaments appear to be the main bridges connecting high
 density regions. 
 On the largest scales the filament length can be on the order of
 $10-100$ Mpc.
-See XXX for a recent review of cosmic web finders that are able to
-characterize filaments. 
 
 The emergence of the cosmic web can be understood as the interplay of
-two conditions. First, the initial gaussian random density field; and
-second, its evolution under its own gravity. 
+two conditions. 
+First, the initial gaussian random density field; and second, its
+evolution under its own gravity.  
 The initial anisotropies in the density field are amplified by gravity
 to finally become filaments and voids.  
 The structure of the cosmic web is thus expected to encode information
@@ -82,31 +81,25 @@ about the underlying cosmological model: type of initial fluctuations,
 proportions of different kinds of matter, the expansion history of the
 Universe and the rules of gravity.
 Voids, for instance, can be used as cosmological probes, their
-structure are strongly influence by dark energy.
+structure are strongly influence by dark energy \citep{2009ApJ...696L..10L,2012MNRAS.426..440B};
+the statistical isotropy of filaments can be used to perform
+Alcock-Paczynski test \citep{2014ApJ...796..137L}
 
 In this paper we introduce the $\beta$-skeleton as an algorithm to
 characterize the cosmic web.
 The $\beta$-skeleton concept stems from the fields of computational geometry
 and geometric graph theory and has been widely applied in the areas of
 image analysis, machine learning, visual perception and pattern
-recognition. 
+recognition \citep{edelsbrunner1983shape,amenta1998crust,zhang2002locating}. 
 In the context of web finders, the $\beta$-skeleton belongs to a class
 of algorithms that, starting from a set of 3D spatial points, builds a
 graph describing the degree of connectedness.
 In this aspect it is similar to the minimum spanning tree (MST)
-algorithm, with the main difference that the resulting graph depends
+algorithm \citep{1985MNRAS.216...17B}, with the main difference that the resulting graph depends
 on the continous $\beta$ parameter;
 it is also related to web finders that are designed on the basis of
-topological persistence, such as DisPerSE. 
+topological persistence, such as DisPerSE \citep{2011MNRAS.414..350S}. 
 
-
-%Kirkpatrick \& Radke (1985) 
-%as a scale-invariant variation of the alpha shapes of Edelsbrunner, Kirkpatrick \& Seidel (1983). 
-%It has 
-
-%------------------------------------------------------------------------------------------------
-
-% Fixed this by Graziano
 
 This paper is organized as follows. 
 In Section 2, we briefly introduce the definition and the basic properties of the $\beta$-skeleton. 
